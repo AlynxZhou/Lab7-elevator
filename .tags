@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AnimateSimulation	ScreenSimulation.c	/^void AnimateSimulation(const char filename[])$/;"	f
+CC	Makefile	/^CC ?= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS ?= -std=c11$/;"	m
+CLEAR	DataModel.h	11;"	d
+CLEAR	DataModel.h	14;"	d
+ELEVATORSTATE	DataModel.h	/^} ELEVATORSTATE;$/;"	t	typeref:struct:elevatorstate
+HistorySimulate	ElevatorSimulation.c	/^void HistorySimulate(const char filename[])$/;"	f
+InitElevator	ElevatorSimulation.c	/^void InitElevator(ELEVATORSTATE *elevator)$/;"	f
+InitSimulation	ElevatorSimulation.c	/^void InitSimulation(void)$/;"	f
+LIBS	Makefile	/^LIBS ?= -lSDL2 -lSDL2_ttf$/;"	m
+MAX_PARAM_ARRAY_LEN	DataModel.h	4;"	d
+OBJECTS	Makefile	/^OBJECTS := DataExport.o DataImport.o ElevatorSimulation.o main.o ScreenSimulation.o$/;"	m
+OS_SEP	DataModel.h	10;"	d
+OS_SEP	DataModel.h	13;"	d
+ParamConf	DataExport.c	/^void ParamConf(int choice)$/;"	f
+PrintMainMenu	ElevatorSimulation.c	/^int PrintMainMenu(void)$/;"	f
+SYSCONF	DataModel.h	6;"	d
+SYSPARAM	DataModel.h	/^} SYSPARAM;$/;"	t	typeref:struct:SysParam
+SYSPARAM_TXT	DataModel.h	7;"	d
+ShowMenu	ElevatorSimulation.c	/^void ShowMenu(int menu_flag)$/;"	f
+SilenceSimulate	ElevatorSimulation.c	/^void SilenceSimulate(const char filename[])$/;"	f
+SysParam	DataModel.h	/^typedef struct SysParam {$/;"	s
+SystemInit	ElevatorSimulation.c	/^int SystemInit(void)$/;"	f
+USERCALL	DataModel.h	/^} USERCALL;$/;"	t	typeref:struct:UserCall
+UserCall	DataModel.h	/^typedef struct UserCall {$/;"	s
+__DATAEXPORT_H__	DataExport.h	2;"	d
+__DATAIMPORT_H__	DataImport.h	2;"	d
+__DATAMODEL_H__	DataModel.h	2;"	d
+__ELEVATORSIMULATION_H__	ElevatorSimulation.h	2;"	d
+__SCREENSIMJUULATION_H__	ScreenSimulation.h	2;"	d
+animate_route	ScreenSimulation.c	/^void animate_route(void)$/;"	f
+black	ScreenSimulation.c	/^SDL_Color black = {0x00, 0x00, 0x00, 0xff};$/;"	v
+building	ScreenSimulation.c	/^SDL_Rect building;$/;"	v
+call_time	DataModel.h	/^	int call_time;		\/\/ 用户请求时刻$/;"	m	struct:UserCall
+call_type	DataModel.h	/^	char call_type;		\/\/ 用户指令类型, ́U ́表示上行指令, ́D ́表示下行指令$/;"	m	struct:UserCall
+clear_background	ScreenSimulation.c	/^void clear_background(const SDL_Color background_color)$/;"	f
+current_floor	DataModel.h	/^	int current_floor;	\/\/ 电梯当前所处楼层$/;"	m	struct:elevatorstate
+current_usercall	DataModel.h	/^	USERCALL *current_usercall;	\/\/ 电梯响应的用户指令队列$/;"	m	struct:elevatorstate
+delay	ScreenSimulation.c	/^int delay;$/;"	v
+draw_rounded_box	ScreenSimulation.c	/^void draw_rounded_box(const SDL_Rect target_rect, int radius)$/;"	f
+elevator	ScreenSimulation.c	/^SDL_Rect elevator;$/;"	v
+elevator_a	main.c	/^ELEVATORSTATE elevator_a;$/;"	v
+elevator_b	main.c	/^ELEVATORSTATE elevator_b;$/;"	v
+elevatorstate	DataModel.h	/^typedef struct elevatorstate {$/;"	s
+finish_call_num	main.c	/^int finish_call_num;$/;"	v
+floors	ScreenSimulation.c	/^int floors;$/;"	v
+font	ScreenSimulation.c	/^TTF_Font *font = NULL;$/;"	v
+gray	ScreenSimulation.c	/^SDL_Color gray = {0x95, 0x95, 0x95, 0xff};$/;"	v
+height	ScreenSimulation.c	/^int height = 768;$/;"	v
+init_app	ScreenSimulation.c	/^int init_app(void)$/;"	f
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+param_name	DataModel.h	/^	char param_name[MAX_PARAM_ARRAY_LEN];$/;"	m	struct:SysParam
+param_value	DataModel.h	/^	char param_value[MAX_PARAM_ARRAY_LEN];$/;"	m	struct:SysParam
+parseSysParam	DataImport.c	/^int parseSysParam(const char sysParamPath[], \\$/;"	f
+parseUserCall	DataImport.c	/^int parseUserCall(const char userCallPath[], \\$/;"	f
+quit_app	ScreenSimulation.c	/^void quit_app(void)$/;"	f
+render_frame	ScreenSimulation.c	/^void render_frame(void)$/;"	f
+renderer	ScreenSimulation.c	/^SDL_Renderer *renderer = NULL;$/;"	v
+run_state	DataModel.h	/^	char run_state;		\/\/ 电梯运行状态$/;"	m	struct:elevatorstate
+serve_state	DataModel.h	/^	char serve_state;$/;"	m	struct:elevatorstate
+status_change_flag	main.c	/^int status_change_flag;$/;"	v
+sysparam_list	main.c	/^SYSPARAM *sysparam_list = NULL;$/;"	v
+sysparam_num	main.c	/^int sysparam_num;$/;"	v
+texture	ScreenSimulation.c	/^SDL_Texture *texture = NULL;$/;"	v
+time	main.c	/^int time;$/;"	v
+update_time	ScreenSimulation.c	/^Uint32 update_time(Uint32 interval, void *param)$/;"	f
+user_floor	DataModel.h	/^	int user_floor;		\/\/ 用户所在楼层$/;"	m	struct:UserCall
+user_target	DataModel.h	/^	int user_target;	\/\/ 用户目标楼层$/;"	m	struct:UserCall
+usercall_list	main.c	/^USERCALL *usercall_list = NULL;$/;"	v
+usercall_num	main.c	/^int usercall_num;$/;"	v
+white	ScreenSimulation.c	/^SDL_Color white = {0xff, 0xff, 0xff, 0xff};$/;"	v
+width	ScreenSimulation.c	/^int width = 1024;$/;"	v
+window	ScreenSimulation.c	/^SDL_Window *window = NULL;$/;"	v
